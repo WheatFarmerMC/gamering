@@ -1,116 +1,275 @@
+
+<!DOCTYPE html>
 <html>
 <head>
-<script>window.aiptag=window.aiptag||{cmd:[]},aiptag.cmd.display=aiptag.cmd.display||[],aiptag.cmd.player=aiptag.cmd.player||[],aiptag.cmp={show:!0,position:"min",button:!1,buttonText:"Privacy settings",buttonPosition:"bottom-right"}</script>
-<script async src="//api.adinplay.com/libs/aiptag/pub/MIN/agar.io/tag.min.js"></script>
-<script>aiptag.cmd.player.push(function(){aiptag.adplayer=new aipPlayer({AD_WIDTH:960,AD_HEIGHT:540,AD_DISPLAY:"fullscreen",LOADING_TEXT:"loading advertisement",PREROLL_ELEM:function(){return document.getElementById("preroll")},AIP_COMPLETE:function(e){}})})</script>
-<base href="">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="The smash hit game! Control your cell and eat other players to grow larger! Play with millions of players around the world and try to become the biggest cell of all!">
-<meta name="keywords" content="agario, agar, io, cell, cells, virus, bacteria, blob, game, games, web game, html5, fun, flash">
-<meta name="robots" content="index, follow">
-<meta name="viewport" content="minimal-ui,width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta property="fb:app_id" content="677505792353827" />
-<meta property="og:title" content="Agar.io " />
-<meta property="og:description" content="The smash hit game! Control your cell and eat other players to grow larger! Play with millions of players around the world and try to become the biggest cell of all!" />
-<meta property="og:url" content="http://agar.io/" />
-<meta property="og:image" content="http://agar.io/img/1200x630.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:type" content="website" />
-<meta property="al:ios:url" content="com.miniclip.agar.io://">
-<meta property="al:ios:app_store_id" content="995999703">
-<meta property="al:ios:app_name" content="Agar.io">
-<meta property="al:android:url" content="com.miniclip.agar.io://">
-<meta property="al:android:app_name" content="Agar.io">
-<meta property="al:android:package" content="com.miniclip.agar.io">
-<title>Agar.io</title>
-<link rel="canonical" href="http://agar.io/" />
-<link id="favicon" rel="icon" type="image/png" href="favicon-32x32.png" />
-<script>
-const EnvConfig = {
-	env_local: "false",
-	env_production: "true",
-    fb_app_id: "677505792353827",
-    ga_trackingId: "UA-62402209-1",
-    google_client_id: "686981379285-oroivr8u2ag1dtm3ntcs6vi05i3cpv0j.apps.googleusercontent.com",
-    gift_object_id: "1666759370208394",
-
-    master_url: "https://webbouncer-live-v8-0.agario.miniclippt.com",
-    socketEndpoint: "",
-    xsolla_endpoint: "https://payments.agario.miniclippt.com",
-    fb_endpoint: "https://rewardcallback-web-live.agario.miniclippt.com/payments/facebook",
-    game_url: "http://agar.io",
-    supersonic_app_key: "416358b5",
-    tap_research_api_key: "f2b4fd7d3dd1a7d871d79cdb1330c5ef",
-    interstitial_url: "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/116850162/Agario_Adsense_For_Games&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=http%3A%2F%2Fagar.io&correlator=[timestamp]",
-    // =======================================
-    // Configurations
-    config_url: "https://configs-web.agario.miniclippt.com/live/v15",
-    custom_skins_url: "https://configs.agario.miniclippt.com/live/custom_skins/",
-    load_local_configuration: "false",
-    configID: "1317",
-	configVersion: "15",
-
-	//Bacon
-	bacon_url: "https://bacon.agario.miniclippt.com/v1.0",
-
-    //Miniclip SDK - Analytics
-    goliathUrl: "",
-    apiKey: "19ca7403-1994-11e9-b312-06a2aa13cf6c",
-    checksumKey: "19ca7e8a-1994-11e9-b312-06a2aa13cf6c",
-    analyticsEnv: "production",
-
-    //New Relic
-    NR_licenseKey: "",
-    NR_applicationID: "",
-
-    datadog_appid: 'agar.io.web',
-    datadog_env: 'production',
-
-    applixirGameId: '4534',
-    applixirZoneId: '2497',
-    applixirDevId: '3312',
-
-    currentEnv: "production"
-}
-window.EnvConfig = EnvConfig;
+<!-- external -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"Unsurprisingly, this website uses cookies for ads and traffic analysis.","dismiss":"Got it!","learnMore":"Learn more","link":"//orteil.dashnet.org/cookieconsentpolicy.html","target":"_blank","theme":"//orteil.dashnet.org/cookieconsent.css","domain":"dashnet.org"};
 </script>
-<script type="text/javascript">window.presetGameMode=":ffa"</script>
-<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],window.googletag=googletag</script>
-<script>!function(e,n,t,c,o,a,f){e.fbq||(o=e.fbq=function(){o.callMethod?o.callMethod.apply(o,arguments):o.queue.push(arguments)},e._fbq||(e._fbq=o),(o.push=o).loaded=!0,o.version="2.0",o.queue=[],(a=n.createElement(t)).async=!0,a.src="//connect.facebook.net/en_US/fbevents.js",(f=n.getElementsByTagName(t)[0]).parentNode.insertBefore(a,f))}(window,document,"script"),fbq("init","859937640783233"),fbq("track","PageView")</script>
-<noscript><img class="pixel-ad" style="display:none" src="https://www.facebook.com/tr?id=859937640783233&ev=PageView&noscript=1"/></noscript>
-<script type="text/javascript">function getUrlVars(){for(var r,e=[],i=window.location.href.slice(window.location.href.indexOf("?")+1).split("&"),n=0;n<i.length;n++)r=i[n].split("="),e.push(r[0]),e[r[0]]=r[1];return e}window.isChrome=/chrome/.test(navigator.userAgent.toLowerCase()),window.ASSETS_ROOT="";var queryVars=getUrlVars();null!=queryVars.v&&(window.location="/v"+queryVars.v);var rpx_params={kw:"",visitor:{},inventory:{}};window.___gcfg={lang:"en-US",parsetags:"explicit"}</script>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
-<link href="css/styles.37d360a315e30457362e.css" rel="stylesheet">
-<script type="text/javascript" src="bundle_commons.c0137234c23acd31cb31.js"></script>
-<script type="text/javascript" src="bundle_start.37d360a315e30457362e.js"></script>
-<script type="text/javascript" src="mc/agario.js?v=5882ee5582411103ffb14b667848fa7f"></script>
-<script>!function(e,n,o,c,t,i,a){e[o]=e[o]||function(){2===arguments.length&&(e[o].q=e[o].q||[]).push(arguments)},e.MCApolloPageView=e[o],i=n.createElement("script"),a=n.getElementsByTagName("script")[0],i.async=0,e.mc_ap_pv_c_n="agar.io",i.src="//apollo.miniclip.com/v1/js",a.parentNode.insertBefore(i,a)}(window,document,"Apollo")</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+
+<!--<link href="https://fonts.googleapis.com/css?family=Kavoon&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
+<link href='https://fonts.googleapis.com/css?family=Merriweather:900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+	document,'script','https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '357399801355203');
+	fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=357399801355203&ev=PageView&noscript=1"></noscript>
+<!-- end code -->
+<!-- /external -->
+
+<title>Cookie Clicker</title>
+<!--
+Code and graphics copyright Orteil, 2013-2022
+Feel free to alter this code to your liking, but please do not re-host it, do not profit from it and do not present it as your own.
+-->
+
+<meta name="viewport" content="width=900, initial-scale=1">
+<link rel="shortcut icon" href="img/favicon.ico" />
+<script src="base64.js"></script>
+
+<script>
+var VERSION=2.048;
+var BETA=0;
+var App=typeof App==='undefined'?0:App;
+</script>
+
+<link href="style.css?v=5" rel="stylesheet" type="text/css">
+<script  src="main.js?v=5"></script>
+
+<!-- ad -->
+<script src="showads.js"></script><!-- this just detects adblockers so we can adjust the layout and play nice -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-8491708950677704",
+          enable_page_level_ads: true
+     });
+</script>
+<!-- /ad -->
+
+<!--[if IE]>
+<style type="text/css">
+	#ifIE9{display:block;}
+</style>
+<![endif]-->
+
+<!--[if lt IE9]><script src="excanvas.compiled.js"></script><![endif]-->
 </head>
 <body>
-<main style="display:none">
-<h1></h1>
-<p>The smash hit game! Control your cell and eat other players to grow larger! Play with millions of players around the world and try to become the biggest cell of all!</p>
-</main>
-<div id="applixir_blocker" style="display:none"></div>
-<div id="applixir_vanishing_div" hidden>
-<iframe id="applixir_parent"></iframe>
+
+<div id="wrapper">
+
+	<div id="topBar">
+		<div><b style="font-weight:bold;">Cookie Clicker</b>&trade; &copy; <a href="//orteil.dashnet.org" target="_blank" id="topbarOrteil">Orteil</a>, 2022 - <a href="//dashnet.org" target="_blank" id="topbarDashnet">DashNet</a></div>
+		<div><a href="https://twitter.com/orteil42" target="_blank" id="topbarTwitter">twitter</a></div>
+		<div><a href="https://orteil42.tumblr.com" target="_blank" id="topbarTumblr">tumblr</a></div>
+		<div style="position:relative;"><div style="width:22px;height:32px;background:url(img/discord.png);position:absolute;left:0px;top:0px;pointer-events:none;"></div><a href="https://discordapp.com/invite/cookie" target="_blank" style="padding-left:16px;" id="topbarDiscord">Discord</a></div>
+		<div style="position:relative;"><div style="width:25px;height:32px;background:url(img/weeHoodie.png);position:absolute;left:-2px;top:0px;pointer-events:none;"></div><a class="blueLink" href="http://www.redbubble.com/people/dashnet" target="_blank" style="padding-left:12px;" id="topbarMerch">Merch!</a></div>
+		<div style="position:relative;"><div style="width:22px;height:32px;background:url(img/patreon.png);position:absolute;left:0px;top:0px;pointer-events:none;"></div><a class="orangeLink" href="https://www.patreon.com/dashnet" target="_blank" style="padding-left:16px;" id="topbarPatreon">Patreon</a></div>
+		<div style="position:relative;display:none;font-weight:bold;" id="heralds"><div style="position:absolute;top:-4px;width:31px;height:39px;background:url(img/heraldFlag.png);left:50%;margin-left:-15px;pointer-events:none;"></div><div id="heraldsAmount" style="position:relative;z-index:10;text-shadow:0px 1px 0px #000,0px 0px 6px #ff00e4;color:#fff;">-</div></div>
+		<div><a class="lightblueLink" style="font-weight:bold;" href="https://play.google.com/store/apps/details?id=org.dashnet.cookieclicker" target="_blank" id="topbarMobileCC">Cookie Clicker for Android</a></div>
+		<div><a class="lightblueLink" style="font-weight:bold;" href="https://store.steampowered.com/app/1454400/Cookie_Clicker/" target="_blank" id="topbarSteamCC">Cookie Clicker on Steam</a></div>
+		<div><a href="//orteil.dashnet.org/randomgen/" target="_blank" id="topbarRandomgen">RandomGen</a></div>
+		<div><a href="//orteil.dashnet.org/igm/" target="_blank" id="topbarIGM">Idle Game Maker</a></div>
+		<div style="float:right;position:relative;"><div id="tinyglobe" style="position:absolute;top:-4px;width:22px;height:22px;background:url(img/tinyglobeSheet.gif);right:4px;top:4px;pointer-events:none;"></div><a id="changeLanguage" style="font-variant:small-caps;padding-right:20px;" onmouseover="INTERVAL_TINYGLOBE=setInterval(function(){var tinyglobe=document.getElementById('tinyglobe');tinyglobe.style.backgroundPosition=(parseInt(tinyglobe.style.backgroundPosition)-22)+'px';},30);" onmouseout="clearInterval(INTERVAL_TINYGLOBE);">Change language</a><script>document.getElementById('tinyglobe').style.backgroundPosition=(-[0,19,27][Math.floor(Math.random()*3)]*22)+'px';</script></div>
+		<div id="links" class="hoverer">
+			Other versions
+			<div class="hoverable">
+				<a href="../" target="_blank" id="linkVersionLive">Live version</a>
+				<a href="beta" target="_blank" id="linkVersionBeta">Try the beta!</a>
+				<a href="//orteil.dashnet.org/cookieclicker/v10466" target="_blank" id="linkVersionOld">v. 1.0466</a>
+				<a href="//orteil.dashnet.org/experiments/cookie/" target="_blank">Classic</a>
+			</div>
+		</div>
+	</div>
+	<div id="game">
+		<div id="versionNumber" class="title"></div>
+		<script>document.getElementById('versionNumber').innerHTML='v. '+VERSION;</script>
+		<div id="offGameMessageWrap">
+			<div id="offGameMessage">
+				<div id="loader">
+					<div class="spinnyBig"></div>
+					<div class="spinnySmall"></div>
+					<div id="loading" class="title">Loading...</div>
+					<div id="failedToLoad" class="title">This is taking longer than expected.<br>
+					<div style="font-size:65%;line-height:120%;"><!-- error -->Slow connection? If not, please make sure your javascript is enabled, then refresh.<br>
+					If problems persist, this might be on our side - wait a few minutes, then hit ctrl+f5!<!-- /error --></div></div>
+					<div id="ifIE9" class="title" style="font-size:100%;line-height:120%;">Your browser may not be recent enough to run Cookie Clicker.<br>You might want to update, or switch to a more modern browser such as Chrome or Firefox.</div>
+				</div>
+			</div>
+		</div>
+
+		<canvas id="backgroundCanvas"></canvas>
+		
+		<div id="goldenCookie" class="goldenCookie"></div>
+		<div id="seasonPopup" class="seasonPopup"></div>
+		<div id="shimmers"></div>
+		<div id="alert"></div>
+		<div id="particles"></div>
+		<div id="sparkles" class="sparkles"></div>
+		<div id="notes"></div>
+		<div id="darken"></div>
+		<div id="toggleBox" class="framed prompt"></div>
+		<div id="promptAnchor"><div id="prompt" class="framed"><div id="promptContent"></div><div id="promptClose" class="close" style="display:none;" onclick="PlaySound('snd/tickOff.mp3');Game.ClosePrompt();">x</div></div></div>
+		<div id="ascend">
+			<div id="ascendBG"></div>
+			<div id="ascendZoomable"><div id="ascendContent"><div id="ascendUpgrades" style="position:absolute;"></div></div></div>
+			<div id="ascendOverlay"></div>
+		</div>
+		
+		<div id="debug"><div id="devConsole" class="framed"></div><div id="debugLog"></div></div>
+		
+		<div id="sectionLeft" class="inset">
+			<canvas id="backgroundLeftCanvas" style="z-index:5;"></canvas>
+			<div class="blackFiller"></div>
+			<div class="blackGradient"></div>
+			<div id="sectionLeftInfo"></div>
+			<div id="cookies" class="title"></div>
+			<div id="bakeryNameAnchor"><div id="bakeryName" class="title"></div></div>
+			<div id="specialPopup" class="framed prompt offScreen"></div>
+			<div id="buffs" class="crateBox"></div>
+			<div id="cookieAnchor">
+				<button id="bigCookie"></button>
+				<div id="cookieNumbers"></div>
+			</div>
+			<div id="sectionLeftExtra"></div>
+		</div>
+
+		<div class="separatorLeft" id="leftBeam"></div>
+		<div class="separatorRight" id="rightBeam"></div>
+
+		<div id="sectionMiddle" class="inset">
+			<div id="comments" class="inset title">
+				<div id="prefsButton" class="panelButton"><div class="subButton">Options</div></div>
+				<div id="statsButton" class="panelButton"><div>Stats</div></div>
+				<div id="logButton" class="panelButton"><div>Info</div><div id="checkForUpdate">New update!</div></div>
+				<div id="legacyButton" class="panelButton"><div class="subButton">Legacy</div><div id="ascendMeterContainer" class="smallFramed meterContainer"><div id="ascendMeter" class="meter filling"></div></div><div class="roundedPanel" id="ascendNumber"></div><div id="ascendTooltip" class="framed"></div></div>
+				<div id="commentsText">
+					<div id="commentsText1" class="commentsText"></div>
+					<div id="commentsText2" class="commentsText"></div>
+				</div>
+				<div class="separatorBottom"></div>
+			</div>
+			<div id="centerArea">
+				<div id="buildingsTitle" class="inset title zoneTitle">Buildings</div>
+				<div id="buildingsMaster"></div>
+				<div id="rows"></div>
+				<div id="menu"></div>
+			</div>
+		</div>
+		
+		<div id="sectionRight" class="inset">
+			<!-- ad -->
+			<div class="ifNoAds" style="width:300px;text-align:center;padding:8px 0px;background:rgba(0,0,0,0.95);font-size:10px;opacity:0.5;text-shadow:0px 0px 2px #000,0px 1px 0px #000;text-align:center;">
+				Cookie Clicker is mainly supported by ads.<br>Consider unblocking our site or checking out our <a href="https://www.patreon.com/dashnet" target="_blank">Patreon</a>!
+			</div>
+			<div id="smallSupport" style="width:300px;text-align:center;padding-bottom:40px;background:rgba(0,0,0,0.5);position:relative;z-index:100;">
+				
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- Cookie Clicker Header Responsive -->
+				<ins class="adsbygoogle"
+					 style="display:block;margin:auto;width:300px;max-height:300px;overflow:hidden;"
+					 data-ad-client="ca-pub-8491708950677704"
+					 data-ad-slot="7077525342"
+					 data-ad-format="rectangle"
+					 data-full-width-responsive="true"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+				
+				<script>
+				document.addEventListener('DOMContentLoaded',function(){
+					setTimeout(function(){
+						var adSlot=document.querySelector("ins[data-ad-slot='7077525342']");
+						if(adSlot && adSlot.getAttribute('data-ad-status')=='unfilled')
+						{
+							var backfill=document.createElement('div');backfill.innerHTML='<iframe style="border:none;" src="https://serve.playsaurus.com/300x250.html" width="300" height="250" sandbox="allow-scripts allow-popups"></iframe>';
+							adSlot.parentNode.replaceChild(backfill,adSlot);
+						}
+					},3000);
+				});
+				</script>
+				
+				<div class="supportComment">^ Sponsored link ^</div>
+			</div>
+			<!-- /ad -->
+			<div id="store">
+				<div id="storeTitle" class="inset title zoneTitle">Store</div>
+				<div id="toggleUpgrades" class="storeSection upgradeBox"></div>
+				<div id="techUpgrades" class="storeSection upgradeBox"></div>
+				<div id="vaultUpgrades" class="storeSection upgradeBox"></div>
+				<div id="upgrades" class="storeSection upgradeBox"></div>
+				<div id="products" class="storeSection"></div>
+			</div>
+			<!-- ad -->
+			<div id="detectAds" class="adBanner" style="background:transparent;width:1px;height:1px;"></div>
+			<div id="support" style="margin-top:130px;">
+				<div class="supportComment">v Sponsored links v</div>
+				<div style="position:relative;">
+				
+					<div style="position:relative;z-index:100;min-height:250px;">
+					
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- Cookie Clicker Responsive -->
+						<ins class="adsbygoogle"
+							 style="display:block;margin:auto;"
+							 data-ad-client="ca-pub-8491708950677704"
+							 data-ad-slot="9780186019"
+							 data-ad-format="auto"
+							 data-full-width-responsive="true"></ins>
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+				
+						<script>
+						document.addEventListener('DOMContentLoaded',function(){
+							setTimeout(function(){
+								var adSlot=document.querySelector("ins[data-ad-slot='9780186019']");
+								if(adSlot && adSlot.getAttribute('data-ad-status')=='unfilled')
+								{
+									var backfill=document.createElement('div');backfill.innerHTML='<iframe style="border:none;" src="https://serve.playsaurus.com/300x600.html" width="300" height="600" sandbox="allow-scripts allow-popups"></iframe>';
+									adSlot.parentNode.replaceChild(backfill,adSlot);
+								}
+							},3000);
+						});
+						</script>
+						
+						<div style="height:32px;"></div>
+						
+						<!-- Playsaurus banner -->
+						<a class="ad" id="plad" href="http://www.aq.com/landing/cookie/?utm_campaign=AQW_CookieClicker&utm_source=CookieClicker" target="_blank" title="AdventureQuest Worlds" style="background:url(img/playsaurusbanner1.png) no-repeat;width:300px;height:64px;display:block;position:relative;margin:0px auto;">
+						</a>
+						<script>var plAd=document.getElementById('plad');var plAdList=[['Mr. Mine','playsaurusbanner1.png','https://playsaurusstats.com/redirect.php?url=https%3A%2F%2Fmrmine.com&cmd=pageVisit&gameName=MrMine&utm_source=Dashnet&utm_medium=CC&utm_campaign=CCAd&utm_content=&influencer=&hash=bdf9709304a910abd955a4a9d607f7b2'],['Clicker Heroes','playsaurusbanner2.png','https://playsaurusstats.com/redirect.php?url=https%3A%2F%2Fclickerheroes.com&cmd=pageVisit&gameName=CH1&utm_source=Dashnet&utm_medium=CC&utm_campaign=CCAd&utm_content=&influencer=&hash=a1cb78d7d68c2f6bacd193aef75aa3ce'],['Clicker Heroes','playsaurusbanner3.png','https://playsaurusstats.com/redirect.php?url=https%3A%2F%2Fclickerheroes.com&cmd=pageVisit&gameName=CH1&utm_source=Dashnet&utm_medium=CC&utm_campaign=CCAd&utm_content=&influencer=&hash=a1cb78d7d68c2f6bacd193aef75aa3ce']];var plAdRandom=plAdList[Math.floor(Math.random()*plAdList.length)];plAd.style.background='url(img/'+plAdRandom[1]+')';plAd.href=plAdRandom[2];plAd.title=plAdRandom[0];</script>
+						
+						<div style="height:32px;"></div>
+						
+						<!-- AdventureQuest Worlds banner -->
+						<a class="ad" id="aqad" href="http://www.aq.com/landing/cookie/?utm_campaign=AQW_CookieClicker&utm_source=CookieClicker" target="_blank" title="AdventureQuest Worlds" style="background:url(img/aqworldsbanner.jpg) no-repeat;width:300px;height:64px;display:block;position:relative;margin:0px auto;">
+						</a>
+						
+					</div>
+					
+				</div>
+			</div>
+			<!-- /ad -->
+		</div>
+		
+		<div id="tooltipAnchor"><div id="tooltip" class="framed" onMouseOut="Game.tooltip.hide();"></div></div>
+		<div id="preloadImages" style="display:none;"></div>
+
+	</div>
+
 </div>
-<div id="fb-root"></div>
-<script>!function(e,t,n){var c,o=e.getElementsByTagName(t)[0];e.getElementById(n)||((c=e.createElement(t)).id=n,c.src="//connect.facebook.net/en_US/sdk.js",o.parentNode.insertBefore(c,o))}(document,"script","facebook-jssdk")</script>
-<div id="background"></div>
-<canvas id="canvas"></canvas>
-<div id="home">
-</div>
-<div class="font-family">&nbsp;</div>
-<script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
-<div id="div-gpt-ad-1528792429656-0" class="pixel-ad" style="display:none"></div>
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=e34c6330-b746-4fbd-a9f7-642ee8fbed1c"></script>
-<script src="agario.core.js?v=f5b4e3483ee7415d21c4b8f7c4e31049"></script>
-<script type="text/javascript" src="bundle_end.aba7591fbea1b627ddbd.js"></script>
-<script src="https://www.google-analytics.com/cx/api.js?experiment=mpvbHnN-QF2vR9SGzcIcRQ"></script>
-<script type="text/javascript" src="https://cdn.applixir.com/applixir.sdk3.0m.js"></script>
-<script>(function(){var js = "window['__CF$cv$params']={r:'79db45e39de8eaf2',m:'yfcIoX3kpvjVEafyw5GkmfHf0Btia3VoLkVOFtwjD48-1677106146-0-AXsWgD/6/FXsyzO4ab8RbbwX8tgTFdqgsj9YJHx1O6TIKPQ4cHvF9Xuh2MQG4SFfI1iLI9oRmwMSfDH34dp0LsmiVi5hB4tixCkXOKaIBMwqjTNdigDSin3rozEuPXQdbw==',s:[0xdc46e7ceca,0x5d5b7f9079],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+
+</body>
 </html>
