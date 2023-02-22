@@ -1,5 +1,34 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@WheatFarmerMC 
+ozh
+/
+cookieclicker
+Public
+Fork your own copy of ozh/cookieclicker
+Code
+Issues
+Pull requests
+Actions
+Wiki
+Security
+Insights
+cookieclicker/index.html
+@ozh
+ozh Update to 2.048 as of 2022/11/31
+Latest commit 8a4d351 on Oct 31, 2022
+ History
+ 5 contributors
+@ozh@Gooderist0x1@Delivator@qfoxb@Lugixion
+274 lines (239 sloc)  15 KB
 
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <!-- external -->
@@ -273,3 +302,18 @@ var App=typeof App==='undefined'?0:App;
 
 </body>
 </html>
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+cookieclicker/index.html at gh-pages · ozh/cookieclicker
