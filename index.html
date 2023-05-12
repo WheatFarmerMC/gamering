@@ -12,7 +12,7 @@ var swfobject = {};
 swfobject.embedSWF = function(url, cont, width, height){
     var ruffle = window.RufflePlayer.newest(),
         player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
-            width: 1366,
+            width: 1440,
             height: 768,
             style: 'width: ' + width + 'px; height: ' + height + 'px',
         });
@@ -20,7 +20,7 @@ swfobject.embedSWF = function(url, cont, width, height){
     player.load({ url: url });
 }
 
-swfobject.embedSWF('https://raw.githubusercontent.com/chromehackteam/whitespider/main/flash-games/this-is-the-only-level.swf', 'ruffle', 1366, 768);
+swfobject.embedSWF('https://raw.githubusercontent.com/chromehackteam/whitespider/main/flash-games/this-is-the-only-level.swf', 'ruffle', 1440, 768);
         </script>
     </body>
 </html>
