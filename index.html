@@ -12,8 +12,8 @@ var swfobject = {};
 swfobject.embedSWF = function(url, cont, width, height){
     var ruffle = window.RufflePlayer.newest(),
         player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
-            width: 1440,
-            height: 1024,
+            width: 1366,
+            height: 768,
             style: 'width: ' + width + 'px; height: ' + height + 'px',
         });
     
