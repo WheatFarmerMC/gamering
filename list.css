@@ -15,8 +15,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 0px auto;
+    align-items: left;
+    margin: 50px auto;
 }
 
 .my-btn {
