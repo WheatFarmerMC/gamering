@@ -13,8 +13,8 @@ html, body {
 
 body {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
     align-items: left;
     margin: 50px auto;
 }
