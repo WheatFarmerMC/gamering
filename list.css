@@ -13,7 +13,11 @@ html, body {
 }
 
 body {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 50px auto;
 }
 
 
