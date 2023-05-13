@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #E9D5FF;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.my-btn {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px gray;
+    padding: 5px 15px;
+    min-height: 30px;
+    min-width: 120px;
+}
+
+.my-btn:hover {
+    background-color: blue;
+    transition: 0.7s;
+}
+
+.my-btn:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px orchid;
+    transition: 0.7s;
+}
+
+.my-btn:active {
+    background-color: black;
+}
