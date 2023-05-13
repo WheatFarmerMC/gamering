@@ -32,9 +32,9 @@
             swfobject.embedSWF = function(url, cont, width, height){
             var ruffle = window.RufflePlayer.newest(),
             player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
-            width: 1512,
-            height: 760,
-            style: 'width: ' + width + 'px; height: ' + height + 'px',
+            width: 100,
+            height: 100,
+            style: 'width: ' + width + '%; height: ' + height + '%',
         });
     
     player.load({ url: url });
