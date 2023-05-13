@@ -33,8 +33,8 @@
             var ruffle = window.RufflePlayer.newest(),
             player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
             width: 100,
-            height: 100,
-            style: 'width: ' + width + '%; height: ' + height + '%',
+            height: 800,
+            style: 'width: ' + width + '%; height: ' + height + 'px',
         });
     
     player.load({ url: url });
