@@ -13,6 +13,7 @@
         <style>
             .box {
               width: 100%;
+	      height:760px;
               border: 5px solid gold;
             }
             img {
@@ -31,13 +32,13 @@
             swfobject.embedSWF = function(url, cont, width, height){
             var ruffle = window.RufflePlayer.newest(),
             player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
-            style: 'width: 100%',
+            style: 'width: 100%; height:760px',
         });
     
     player.load({ url: url });
 }
 
-swfobject.embedSWF('https://raw.githubusercontent.com/chromehackteam/whitespider/main/flash-games/this-is-the-only-level.swf', 'ruffle', 100);
+swfobject.embedSWF('https://raw.githubusercontent.com/chromehackteam/whitespider/main/flash-games/this-is-the-only-level.swf', 'ruffle', 100, 760);
         </script>
         </div>
     </body>
