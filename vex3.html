@@ -13,9 +13,7 @@
         <style>
             .box {
               width: 100%;
-              height: 800px;
               border: 5px solid gold;
-              padding-bottom: 20px;
             }
             img {
               width: 100%;
@@ -33,13 +31,13 @@
             swfobject.embedSWF = function(url, cont, width, height){
             var ruffle = window.RufflePlayer.newest(),
             player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
-            style: 'width: 100%; height: 760px',
+            style: 'width: 100%',
         });
     
     player.load({ url: url });
 }
 
-swfobject.embedSWF('https://raw.githubusercontent.com/WheatFarmerMC/Flashers/main/Vex%203.swf', 'ruffle', 100, 760);
+swfobject.embedSWF('https://raw.githubusercontent.com/WheatFarmerMC/Flashers/main/Vex%203.swf', 'ruffle', 100);
         </script>
         </div>
     </body>
