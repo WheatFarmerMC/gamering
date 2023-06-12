@@ -8,18 +8,15 @@
     <link rel="stylesheet" href="WebGL/TemplateData/style.css">
     <script src="WebGL/TemplateData/UnityProgress.js"></script>  
     <script src="WebGL/Build/UnityLoader.js"></script>
+
+    <!-- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- -->
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "WebGL/Build/web2.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "slope_new.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
     </script>
-  </head>
-  <body>
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 640px; height: 360px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">Slope</div>
-      </div>
+        <div id="gameContainer" style="width: 900px; height: 675px; margin: auto"></div>
+
     </div>
-  </body>
 </html>
