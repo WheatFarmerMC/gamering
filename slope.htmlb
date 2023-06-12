@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- -->
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "slope_new.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "WebGL/slope_new.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
     </script>
     <div class="webgl-content">
         <div id="gameContainer" style="width: 900px; height: 675px; margin: auto"></div>
