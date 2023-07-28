@@ -10,9 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="list.css">
     <style>
-        .button-container-div{
-            text-align: left;
-        }
+.button-container-div{
+            text-align: left; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center
+}
         .headerContainer{
             text-align: center;
         }
@@ -23,13 +26,25 @@
     <div class=".headerContainer">
         <h2>List of Games</h2>
     </div>
-    <div class="button-container-div">
-        <a href="onlylevel.html" type="button" class="my-btn">This is the only level</a>
-        <a href="ducklife4.html" type="button" class="my-btn">Duck Life 4</a>
-        <a href="tacass.html" type="button" class="my-btn">Tactical Assassin</a>
-        <a href="tacass2.html" type="button" class="my-btn">Tactical Assassin 2</a>
-        <a href="tacass3.html" type="button" class="my-btn">Tactical Assassin 3</a>
-        <a href="alienhomo.html" type="button" class="my-btn">Alien Homonid</a>
+    <div class="container">
+        <a href="onlylevel.html" type="button" class="my-btn">This is the only level
+          <div class="grid-lines"></div>
+        </a>
+        <a href="ducklife4.html" type="button" class="my-btn">Duck Life 4
+          <div class="grid-lines"></div>
+        </a>
+        <a href="tacass.html" type="button" class="my-btn">Tactical Assassin
+          <div class="grid-lines"></div>
+        </a>
+        <a href="tacass2.html" type="button" class="my-btn">Tactical Assassin 2
+          <div class="grid-lines"></div>
+        </a>
+        <a href="tacass3.html" type="button" class="my-btn">Tactical Assassin 3
+          <div class="grid-lines"></div>
+        </a>
+        <a href="alienhomo.html" type="button" class="my-btn">Alien Homonid
+          <div class="grid-lines"></div>
+        </a>
     </div>
     <script src="list.js"></script>
   </body>
