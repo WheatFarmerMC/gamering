@@ -10,32 +10,68 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <style>
     
       .box {
         min-width: 40%;
         min-width: 30%;
         min-height: 200px;
-        border: 5px solid gold;
+        position: relative;
+        z-index: 1;
       }
       img {
-        width: 100%;
+        width: 512px;
         height: 100%;
       }
+      .image-wrapper {
+      position: relative;
+      width: 100%;
+      height: 1080px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .square {
+    width: 280px;
+    height: 400px;
+    position: absolute;
+    bottom: 30%;
+    right:55%;
+    z-index: -1;
+
+    background-color: #0C0032; /* Set the color of the square */
+  }
     </style>
+        <script>
+          function exit() {
+        var image = document.querySelector('.box img');
+        image.classList.add('animated', 'zoomOutDown');
+        image.addEventListener('animationend', function () {
+          image.style.display = 'none';
+          window.location.href = '/list.html';
+        });
+      }
+        </script>
   </head>
   
   <body>
     <h1>Gamering</h1>
+    <div class = "image-wrapper">
     <div class="box">
-      <img src="images/among-us.gif" alt="Agogus" />
+      <img src="images/floppy.png" alt="Agogus" />
+      <div class = "square"></div>
     </div>
     <p>We host games, want to play them?</p>
     <div class="container">
-      <a href="list.html" type="button" class="my-btn">
-        ▶ Playa
+      <a onclick="exit()" type="button" class="my-btn">
+        ▶ Play
         <div class="grid-lines"></div> <!-- Move the .grid-lines inside the .my-btn element -->
       </a>
+    
+    </div>
     </div> <!-- Add the missing opening <div> tag -->
     <script src="index.js"></script>
   </body>

@@ -28,7 +28,9 @@
         display: flex;
         justify-content: center; /* Horizontally center the button */
         align-items: center; /* Vertically center the button */
+        z-index: 2;
   }
+
   
   .my-btn {
     background-color: #3500D3;
@@ -42,7 +44,9 @@
     border: none;
     outline: none;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    bottom: 250%; /* Adjust the distance from the bottom of the image */
+    left:150%;
     overflow: hidden; /* Add overflow: hidden; to clip any content or backgrounds that exceed the button's boundaries */
     transition: background-color 0.7s ease; /* Add background-color transition for the button */
   
