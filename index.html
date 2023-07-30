@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html>
+  
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,6 +46,9 @@
 
     background-color: #0C0032; /* Set the color of the square */
   }
+  h1{
+    z-index: 3;
+  }
     </style>
         <script>
           function exit() {
@@ -52,11 +57,16 @@
         image.addEventListener('animationend', function () {
           image.style.display = 'none';
           window.location.href = '/list.html';
-        });
-      }
+        })
+        };
+        function pulse(){
+            var square = document.querySelector('.square')
+            square.classList.add('animated', 'pulse');
+        square.addEventListener('animationend', function () {
+        })
+      };
         </script>
   </head>
-  
   <body>
     <div class = "image-wrapper">
       <h1>Gamering</h1>
@@ -72,7 +82,12 @@
       </a>
     
     </div>
-    </div> <!-- Add the missing opening <div> tag -->
-    <script src="index.js"></script>
+    </div> <div>
+    <script src="index.js">
+      </script>
+      <script>
+      window.onload = pulse;
+    </script>
+    
   </body>
 </html>
