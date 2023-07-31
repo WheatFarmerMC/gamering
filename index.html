@@ -45,7 +45,7 @@
     right:55%;
     z-index: -1;
     transition: transform 0.3s ease;
-    background-color: #240090; /* Set the color of the square */
+    background-color: #190061; /* Set the color of the square */
   }
   .expand {
       transform: scale(1.1); /* Scale the square to 120% of its original size */
@@ -53,6 +53,7 @@
     }
   h1{
     z-index: 3;
+    transition: transform 0.3s ease;
   }
     </style>
         <script>
@@ -90,10 +91,21 @@
       square.classList.remove('expand');
     });
   }
+  function h1expand() {
+    var square = document.querySelector('h1');
+    square.addEventListener('mouseenter', function () {
+      square.classList.add('expand');
+    });
+
+    square.addEventListener('mouseleave', function () {
+      square.classList.remove('expand');
+    });
+  }
   window.onload = function () {
       /*pulse();*/
       expandOnHover();
       imgexpand();
+      h1expand();
     };
 
         </script>
