@@ -24,6 +24,7 @@
       img {
         width: 512px;
         height: 100%;
+        transition: transform 0.3s ease;
       }
       .image-wrapper {
       position: absolute;
@@ -43,8 +44,13 @@
     bottom: 30%;
     right:55%;
     z-index: -1;
+    transition: transform 0.3s ease;
     background-color: #240090; /* Set the color of the square */
   }
+  .expand {
+      transform: scale(1.1); /* Scale the square to 120% of its original size */
+      transition: transform 0.3s ease;
+    }
   h1{
     z-index: 3;
   }
@@ -64,6 +70,32 @@
         square.addEventListener('animationend', function () {
         })
       };
+      function expandOnHover() {
+    var square = document.querySelector('.square');
+    square.addEventListener('mouseenter', function () {
+      square.classList.add('expand');
+    });
+
+    square.addEventListener('mouseleave', function () {
+      square.classList.remove('expand');
+    });
+  }
+  function imgexpand() {
+    var square = document.querySelector('.box img');
+    square.addEventListener('mouseenter', function () {
+      square.classList.add('expand');
+    });
+
+    square.addEventListener('mouseleave', function () {
+      square.classList.remove('expand');
+    });
+  }
+  window.onload = function () {
+      /*pulse();*/
+      expandOnHover();
+      imgexpand();
+    };
+
         </script>
   </head>
   <body>
@@ -85,7 +117,6 @@
     <script src="index.js">
       </script>
       <script>
-      window.onload = pulse;
     </script>
     
   </body>
