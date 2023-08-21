@@ -2,9 +2,14 @@
     box-sizing: border-box;
   }
   @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
+    @font-face {
+  font-family: Font;
+  src: url(ADLaMDisplay-Regular.ttf);
+    }
   html,
   body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Font;
+    
     font-size: 1.2rem;
     font-weight: 500;
     background-color: #000000;
