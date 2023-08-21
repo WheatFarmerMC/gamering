@@ -6,9 +6,11 @@
   font-family: Font;
   src: url(ADLaMDisplay-Regular.ttf);
     }
+* {
+    font-family: Font;
+}
   html,
   body {
-    font-family: Font;
     
     font-size: 1.2rem;
     font-weight: 500;
