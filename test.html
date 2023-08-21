@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="/images/Untitled design.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <style>
     
@@ -36,17 +36,32 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      background-image: url('/images/recgrid.png');
+      background-size: 5000px; /* Adjust to "contain", "auto", or custom values as needed */
+      background-repeat: no-repeat; /* Prevent the image from repeating */
+      background-position: center;
+      background-attachment: fixed;
     }
     .square {
     width: 280px;  
-    height: 400px;
+    height: 500px;
     position: absolute;
-    bottom: 30%;
+    bottom: 10%;
     right:55%;
     z-index: -1;
     transition: transform 0.3s ease;
     background-color: #190061; /* Set the color of the square */
   }
+    .description {
+    width: 300px;
+      height: 300px;
+      position: absolute;
+      bottom: 18%;
+      right: 65%;
+      z-index:4
+      transition: transform 0.3s ease;
+      background-color: #3500D3;
+    }
   .expand {
       transform: scale(1.1); /* Scale the square to 120% of its original size */
       transition: transform 0.3s ease;
@@ -55,9 +70,9 @@
     z-index: 3;
     transition: transform 0.3s ease;
   }
-  body {
-  background-image: url('example_img_girl.jpg');
-}
+  body{
+    background-image: url('/images/grid.png');
+  }
     </style>
         <script>
           function exit() {
@@ -65,7 +80,7 @@
         image.classList.add('animated', 'zoomOutDown');
         image.addEventListener('animationend', function () {
           image.style.display = 'none';
-          window.location.href = '/list.html';
+          window.location.href = '/list';
         })
         };
         function pulse(){
@@ -104,18 +119,31 @@
       square.classList.remove('expand');
     });
   }
+  window.onload = function () {
+      /*pulse();*/
+      expandOnHover();
+      imgexpand();
+      h1expand();
+    };
 
         </script>
   </head>
-  <body>
+  <body>  
     <div class = "image-wrapper">
-      <h1><img src="images/colorful.png"></h1>
+      <h1>Gamering</h1>
     <div class="box">
+      <img src="images/floppy.png" alt="Agogus" />
+      <div class = "square"></div>
+      <div class = "description"></div>
     </div>
+    <p>We host games, want to play them?</p>
     <div class="container">
-        <a href="/list.html"><img src="images/New Project.gif"></a>
+      <a onclick="exit()" type="button" class="my-btn">
+        ▶ Play
+        <div class="grid-lines"></div> <!-- Move the .grid-lines inside the .my-btn element -->
+      </a>
+    
     </div>
-    <p></p>
     </div> <div>
     <script src="index.js">
       </script>
