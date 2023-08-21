@@ -52,6 +52,16 @@
     transition: transform 0.3s ease;
     background-color: #190061; /* Set the color of the square */
   }
+    .description {
+    width: 300px;
+      height: 300px;
+      position: absolute;
+      bottom: 20%;
+      right: 40%;
+      z-index:4
+      transition: transform 0.3s ease;
+      background-color: #3500D3;
+    }
   .expand {
       transform: scale(1.1); /* Scale the square to 120% of its original size */
       transition: transform 0.3s ease;
@@ -70,7 +80,7 @@
         image.classList.add('animated', 'zoomOutDown');
         image.addEventListener('animationend', function () {
           image.style.display = 'none';
-          window.location.href = '/list.html';
+          window.location.href = '/list';
         })
         };
         function pulse(){
