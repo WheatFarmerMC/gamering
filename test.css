@@ -50,7 +50,7 @@
     cursor: pointer;
     position: absolute;
     bottom: 250%; /* Adjust the distance from the bottom of the image */
-    left:150%;
+    left:140%;
     overflow: hidden; /* Add overflow: hidden; to clip any content or backgrounds that exceed the button's boundaries */
     transition: background-color 0.7s ease; /* Add background-color transition for the button */
     rotate: 15deg;
@@ -78,7 +78,7 @@
   
   .my-btn:hover .grid-lines {
     opacity: 1; /* Show the grid lines when button is hovered */
-    transform: rotate(17deg); /* Apply a 2-degree clockwise rotation to the grid lines */
+    transform: rotate(2deg); /* Apply a 2-degree clockwise rotation to the grid lines */
   }
   
   .my-btn:hover {
