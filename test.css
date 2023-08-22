@@ -49,7 +49,7 @@
     outline: none;
     cursor: pointer;
     position: absolute;
-    bottom: 280%; /* Adjust the distance from the bottom of the image */
+    bottom: 260%; /* Adjust the distance from the bottom of the image */
     left:130%;
     overflow: hidden; /* Add overflow: hidden; to clip any content or backgrounds that exceed the button's boundaries */
     transition: background-color 0.7s ease; /* Add background-color transition for the button */
