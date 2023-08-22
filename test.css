@@ -53,6 +53,7 @@
     left:150%;
     overflow: hidden; /* Add overflow: hidden; to clip any content or backgrounds that exceed the button's boundaries */
     transition: background-color 0.7s ease; /* Add background-color transition for the button */
+    transform:rotate(45deg);
   
     /* Remove the underline from the link */
     text-decoration: none;
