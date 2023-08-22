@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-  }
+}
   @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
     @font-face {
   font-family: Font;
@@ -53,7 +53,7 @@
     left:150%;
     overflow: hidden; /* Add overflow: hidden; to clip any content or backgrounds that exceed the button's boundaries */
     transition: background-color 0.7s ease; /* Add background-color transition for the button */
-    transform:rotate(35deg);
+    rotate: 15deg;
   
     /* Remove the underline from the link */
     text-decoration: none;
@@ -78,12 +78,12 @@
   
   .my-btn:hover .grid-lines {
     opacity: 1; /* Show the grid lines when button is hovered */
-    transform: rotate(37deg); /* Apply a 2-degree clockwise rotation to the grid lines */
+    transform: rotate(17deg); /* Apply a 2-degree clockwise rotation to the grid lines */
   }
   
   .my-btn:hover {
     background-color: transparent; /* Make the button's background transparent */
-    transform: rotate(37deg);
+    transform: rotate(2deg);
   }
   
   .my-btn:focus {
