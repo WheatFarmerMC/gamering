@@ -83,7 +83,7 @@
   
   .my-btn:hover {
     background-color: transparent; /* Make the button's background transparent */
-    transform: rotate(17deg);
+    transform: rotate(2deg);
   }
   
   .my-btn:focus {
