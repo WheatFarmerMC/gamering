@@ -10,12 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="list.css">
     <style>
-        .button-container-div{
-            text-align: left;
-        }
+.button-container-div{
+            text-align: left; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center
+}
         .headerContainer{
             text-align: center;
         }
+        .columns {
+    column-count: 3;
+  }
     </style>
   </head>
 
@@ -23,14 +29,57 @@
     <div class=".headerContainer">
         <h2>List of Games</h2>
     </div>
-    <div class="button-container-div">
-        <a href="onlylevel.html" type="button" class="my-btn">This is the only level</a>
-        <a href="ducklife4.html" type="button" class="my-btn">Duck Life 4</a>
-        <a href="tacass.html" type="button" class="my-btn">Tactical Assassin</a>
-        <a href="tacass2.html" type="button" class="my-btn">Tactical Assassin 2</a>
-        <a href="tacass3.html" type="button" class="my-btn">Tactical Assassin 3</a>
-        <a href="alienhomo.html" type="button" class="my-btn">Alien Homonid</a>
+    <div class = "columns">
+
+    <div class="container">
+        <a href="onlylevel.html" type="button" class="my-btn">This is the only level
+          <div class="grid-lines"></div>
+        </a>
+        <a href="ducklife4.html" type="button" class="my-btn">Duck Life 4
+          <div class="grid-lines"></div>
+        </a>
+        <a href="tacass.html" type="button" class="my-btn">Tactical Assassin
+          <div class="grid-lines"></div>
+        </a>
+        <a href="tacass2.html" type="button" class="my-btn">Tactical Assassin 2
+          <div class="grid-lines"></div>
+        </a>
+        <a href="tacass3.html" type="button" class="my-btn">Tactical Assassin 3
+          <div class="grid-lines"></div>
+        </a>
+        <a href="alienhomo.html" type="button" class="my-btn">Alien Homonid
+          <div class="grid-lines"></div>
+        </a>
+        <a href="vex3.html" type="button" class="my-btn">Vex 3
+          <div class="grid-lines"></div>
+        </a>
+          <a href="houseofhazard.html" type="button" class="my-btn">House of Hazards
+          <div class="grid-lines"></div>
+        </a>
+          <a href="party.html" type="button" class="my-btn">Party Project
+          <div class="grid-lines"></div>
+        </a>
+          <a href="nsmbvs.html" type="button" class="my-btn">NSMBVS
+          <div class="grid-lines"></div>
+        </a>
+      </a>
+      <a href="smashkarts.html" type="button" class="my-btn">Smash Karts
+      <div class="grid-lines"></div>
+    </a>
+      <a href="nsmbvsc.html" type="button" class="my-btn">NSMBVS custom mod
+      <div class="grid-lines"></div>
+    </a>
+      <a href="PVZ_Travel.html" type="button" class="my-btn">PVZ Travel
+      <div class="grid-lines"></div>
+    </a>
+      <a href="nsmbbf.html" type="button" class="my-btn">NSMBVS battlefield mod
+      <div class="grid-lines"></div>
+    </a>
+      <a href="1v1lol.html" type="button" class="my-btn">1v1.lol
+      <div class="grid-lines"></div>
+    </a>
     </div>
+  </div>
     <script src="list.js"></script>
   </body>
 </html>
