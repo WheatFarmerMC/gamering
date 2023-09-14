@@ -8,7 +8,6 @@ src: url(ADLaMDisplay-Regular.ttf);
   }
 * {
   font-family: Font;
-  overflow: hidden;
 }
 html,
 body {
@@ -17,6 +16,7 @@ body {
   font-weight: 500;
   background-color: #BC00DD;
   color: #FFB600;
+  background-image: url('/images/recgrid.png');
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 .container {
       position: relative;
       width: 200px; /* Adjust the width and height to fit your needs */
-      height: 200px;
+      height: 48vh;
       display: flex;
       justify-content: center; /* Horizontally center the button */
       align-items: center; /* Vertically center the button */
@@ -102,3 +102,5 @@ body {
   box-shadow: none;
   transition: 0.2s;
 }
+
+
