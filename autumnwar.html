@@ -13,18 +13,20 @@
         <style>
             .box {
               width: 100%;
-              height: 800px;
-              border: 5px solid #3500D3;
-              padding-bottom: 20px;
+              height: 100vh;
+              border: 0px solid #3500D3;
+              padding-bottom: 0px;
             }
             img {
-              width: 100%;
-              height: 100%;
+              width: 100vw;
+              height: 100vh;
             }
+          body {
+  overflow: hidden; /* Hide scrollbars */
+}
         </style>
     </head>
     <body>
-        <div class="box">
             <div id='ruffle'></div>
             <script src='https://wheatfarmermc.github.io/ruffle/ruffle.js'></script>
             <script>
@@ -33,13 +35,13 @@
             swfobject.embedSWF = function(url, cont, width, height){
             var ruffle = window.RufflePlayer.newest(),
             player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
-            style: 'width: 100%; height: 790px',
+            style: 'width: 100vw; height: 100vh',
         });
     
     player.load({ url: url });
 }
 
-swfobject.embedSWF('https://prod.addictinggames.com/sites/default/files/flash_games/autumnwar_0.swf', 'ruffle', 100, 790);
+swfobject.embedSWF('https://raw.githubusercontent.com/WheatFarmerMC/Flashers/528f858ea3b7fb2222a06098d4c208ae1b6f0577/autumnwar_0.swf', 'ruffle', 100, 100);
         </script>
         </div>
     </body>
