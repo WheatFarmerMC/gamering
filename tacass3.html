@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -5,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Tactical Assassin 3</title>
+      
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,19 +14,26 @@
         <meta charset='utf8'>
         <style>
             .box {
-              width: 100%;
-              height: 800px;
-              border: 5px solid #3500D3;
-              padding-bottom: 20px;
+              width: 100vw;
+              height: 100vh;
+              border: 0px solid #3500D3;
+              padding-bottom: 0px;
+              left:50vw;
+              top:50vh;
             }
             img {
-              width: 100%;
-              height: 100%;
+              width: 100vw;
+              height: 100vh;
             }
+          body {
+  overflow: hidden; /* Hide scrollbars */
+            margin:0px;
+            border: 0px;
+}
         </style>
     </head>
     <body>
-        <div class="box">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
             <div id='ruffle'></div>
             <script src='https://wheatfarmermc.github.io/ruffle/ruffle.js'></script>
             <script>
@@ -33,13 +42,13 @@
             swfobject.embedSWF = function(url, cont, width, height){
             var ruffle = window.RufflePlayer.newest(),
             player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
-            style: 'width: 100%; height: 790px',
+            style: 'width: 100vw; height: 100vh',
         });
     
     player.load({ url: url });
 }
 
-swfobject.embedSWF('https://raw.githubusercontent.com/WheatFarmerMC/Flashers/main/tactical-assassin-3-10695.swf', 'ruffle', 100, 790);
+swfobject.embedSWF('https://raw.githubusercontent.com/WheatFarmerMC/Flashers/main/tactical-assassin-3-10695.swf', 'ruffle', 100, 100);
         </script>
         </div>
     </body>
@@ -48,12 +57,4 @@ function openWindow() {
 	window.open('ducklife4.html', '_parent');
 }
 </script>
-
-<body>
-    <p> Tactical Assassin 3</p> 
-    <a href="index.html" type="button" class="my-btn">Home Page
-        <div class="grid-lines"></div>
-    </a>
-<br><br>
-</body>
 </html>
