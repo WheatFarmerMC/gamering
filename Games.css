@@ -39,7 +39,9 @@
         justify-content: center;
         align-items: flex-start;
   }
-  
+  button {
+    text-align: center;
+  }
   .my-btn {
     background-color: #F20089;
     color: white;
