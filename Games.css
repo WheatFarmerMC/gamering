@@ -52,12 +52,9 @@
     border: none;
     outline: none;
     cursor: pointer;
-    position: absolute;
-    bottom: 260%; /* Adjust the distance from the bottom of the image */
-    left:130%;
+    position: relative;
     overflow: hidden; /* Add overflow: hidden; to clip any content or backgrounds that exceed the button's boundaries */
     transition: background-color 0.7s ease; /* Add background-color transition for the button */
-    rotate: 15deg;
   
     /* Remove the underline from the link */
     text-decoration: none;
