@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gaem list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Games/list.css">
+    <style>
+.button-container-div{
+            text-align: left; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center
+}
+        .headerContainer{
+            text-align: center;
+        }
+        .columns {
+    column-count: 3;
+    column-width: 20px;    
+    flex-grow: 0;
+    width: 600px;
+  }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class=".headerContainer">
+        <h2>List of Games</h2>
+    </div>
+    <script>
+      const games = [['1v1lol', '1v1.lol'], ['craftnite', 'craftnite.io'], 
+      ['ducklife4', 'Duck Life 4'], ['ageofconflict','Age Of Conflict'], 
+      ['alienhomo','pp'],['autumnwar','Autumn War'],['houseofhazard','House Of Hazards'],
+      ['indtank','Indestructo Tank'],['nsmbmm', 'NSMBS Poobis Mod'],['nsmbvs', 'NSMBS'],
+      ['nsmbvsc','NSMBS Custom Mod'],['onlylevel','This is the Only Level'],['tacass','Tactical Assassin'],
+    ['tacass2','Tactical Assassin 2'],['tacass3']['Tactical Assassin 3'],['vex3','Vex 3']];
+      const columns = document.createElement('div');
+      columns.className = 'columns';
+
+
+      const gameContainer=document.createElement('div');
+      gameContainer.className = 'container';
+
+      games.forEach(game => {
+        const gameLink = document.createElement('a');
+        gameLink.href = 'Games/' + game[0]; 
+        gameLink.type = 'button';
+        gameLink.className = 'my-btn';
+        gameLink.textContent = game[1];
+        
+        gameContainer.appendChild(gameLink);
+        columns.appendChild(gameContainer)
+        document.body.appendChild(columns);
+      });
+    </script>
+    <script src="list.js"></script>
+  </body>
+</html>
