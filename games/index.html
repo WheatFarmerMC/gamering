@@ -54,7 +54,7 @@
         gameLink.href = game[0]; 
         gameLink.type = 'button';
         gameLink.className = 'my-btn';
-        gameLink.textContent = game[1];
+        gameLink.innerHTML = game[1]+'<div class=grid-lines></div>'
         
         gameContainer.appendChild(gameLink);
         columns.appendChild(gameContainer)
