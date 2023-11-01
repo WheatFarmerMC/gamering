@@ -1,99 +1,92 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
   }
   @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
-    @font-face {
+  @font-face {
   font-family: Font;
-  src: url(ADLaMDisplay-Regular.ttf);
-    }
+  src: url(/ADLaMDisplay-Regular.ttf);
+  }
   * {
-    font-family: Font;
+  font-family: Font;
   }
   html,
   body {
-    
-    font-size: 1.2rem;
-    font-weight: 500;
-    background-color: #BC00DD;
-    color: #FFB600;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #BC00DD;
+  color: #FFB600;
   }
-  
   body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    padding: 0px;
-
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
   
+  
+  }
   .container {
-        position: relative;
-        width: 200px; /* Adjust the width and height to fit your needs */
-        height: 200px;
-        align-items: center; /* Vertically center the button */
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
+  position: relative;
+  width: 200px; /* Adjust the width and height to fit your needs */
+  height: 200px;
+  align-items: center; /* Vertically center the button */
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
   }
   button {
-    text-align: center;
+  text-align: center;
   }
   .my-btn {
-    background-color: #F20089;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    box-shadow: none;
-    padding: 5px 15px;
-    min-height: 30px;
-    min-width: 120px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden; /* Add overflow: hidden; to clip any content or backgrounds that exceed the button's boundaries */
-    transition: background-color 0.7s ease; /* Add background-color transition for the button */
-    text-align: center;
-    /* Remove the underline from the link */
-    text-decoration: none;
+  background-color: #F20089;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: none;
+  padding: 5px 15px;
+  min-height: 30px;
+  min-width: 120px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; /* Add overflow: hidden; to clip any content or backgrounds that exceed the button's boundaries */
+  transition: background-color 0.7s ease; /* Add background-color transition for the button */
+  text-align: center;
+  /* Remove the underline from the link */
+  text-decoration: none;
   }
-  
   .grid-lines {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: repeating-linear-gradient(to right, transparent, transparent 9px, #3500D3 9px, #3500D3 10px),
-                      repeating-linear-gradient(to bottom, transparent, transparent 9px, #3500D3 9px, #3500D3 10px);
-    background-size: 10px 10px; /* Adjust the size of the grid cells */
-    background-clip: padding-box; /* Prevent background from extending outside the padding box */
-    background-position: -1px -1px; /* Offset background position to hide the top-left corner */
-    pointer-events: none; /* Disable pointer events for the grid, so it doesn't interfere with button hover */
-    opacity: 0; /* Hide the grid lines by default */
-    transition: opacity 0.3s ease; /* Add a smooth transition when the grid appears */
-    transform-origin: center; /* Set the rotation origin to the center of the element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(to right, transparent, transparent 9px, #3500D3 9px, #3500D3 10px),
+  repeating-linear-gradient(to bottom, transparent, transparent 9px, #3500D3 9px, #3500D3 10px);
+  background-size: 10px 10px; /* Adjust the size of the grid cells */
+  background-clip: padding-box; /* Prevent background from extending outside the padding box */
+  background-position: -1px -1px; /* Offset background position to hide the top-left corner */
+  pointer-events: none; /* Disable pointer events for the grid, so it doesn't interfere with button hover */
+  opacity: 0; /* Hide the grid lines by default */
+  transition: opacity 0.3s ease; /* Add a smooth transition when the grid appears */
+  transform-origin: center; /* Set the rotation origin to the center of the element */
   }
-  
   .my-btn:hover .grid-lines {
-    opacity: 1; /* Show the grid lines when button is hovered */
-    transform: rotate(2deg); /* Apply a 2-degree clockwise rotation to the grid lines */
+  opacity: 1; /* Show the grid lines when button is hovered */
+  transform: rotate(2deg); /* Apply a 2-degree clockwise rotation to the grid lines */
   }
-  
   .my-btn:hover {
-    background-color: transparent; /* Make the button's background transparent */
-    transform: rotate(2deg);
+  background-color: transparent; /* Make the button's background transparent */
+  transform: rotate(2deg);
   }
-  
   .my-btn:focus {
-    outline-color: transparent;
-    outline-style: solid;
-    box-shadow: none;
-    transition: 0.2s;
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: none;
+  transition: 0.2s;
   }
-  
   
