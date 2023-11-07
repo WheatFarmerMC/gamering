@@ -16,10 +16,13 @@
     <script src="TemplateData/unityloader41.js"></script>
     <script>
         var gameInstance = UnityLoader.instantiate("gameContainer", "Build/slope.json", { onProgress: UnityProgress, Module: { onRuntimeInitialized: function() { UnityProgress(gameInstance, "complete") } } });
+        var foo = setInterval(function () {
+
         if (!window.screenTop && !window.screenY) {
     document.getElementById('gameContainer').style.height = '100%'
     document.getElementById('gameContainer').style.width = '100%'
-}
+  }
+}, 1000);
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2541434264715219"
      crossorigin="anonymous"></script>
