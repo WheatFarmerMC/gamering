@@ -13,8 +13,8 @@
   body {
   font-size: 1.2rem;
   font-weight: 500;
-  background-color: #BC00DD;
-  color: #FFB600;
+  background-color: #0B132B;
+  color: #5BC0BE;
   }
   body {
   display: flex;
@@ -42,8 +42,8 @@
   text-align: center;
   }
   .my-btn {
-  background-color: #F20089;
-  color: white;
+  background-color: #3A506B;
+  color: #6FFFE9;
   border: none;
   border-radius: 20px;
   box-shadow: none;
