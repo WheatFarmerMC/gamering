@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div contenteditable="true" id="editable">
+	type link here
+</div>
+<div id='demo'>
+
+</div>
+<script>
+function play() {
+let text = document.getElementById("editable").textContent;
+document.getElementById("demo").innerHTML = text;  
+var myWindow = window.open("", "_blank");
+myWindow.document.write('<link href="Games.css" rel="stylesheet" type="text/css" /> <iframe width="100%" height="100%" src="'+ text + '" frameborder="0px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>');
+}
+
+</script>
+<button onclick="play()">stinky</button>
+</body>
+</html>
