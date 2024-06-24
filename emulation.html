@@ -12,8 +12,7 @@
 </div>
 <script>
 	function play() {
-		let text = document.getElementById("editable").textContent;
-		document.getElementById("demo").innerHTML = text;  
+		let text = document.getElementById("editable").textContent; 
 		var myWindow = window.open("", "_blank");
 		myWindow.document.write('<link href="games/Games.css" rel="stylesheet" type="text/css" /> <iframe width="100%" height="100%" src="'+ text + '" frameborder="0px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>');
 	}
@@ -31,6 +30,12 @@
       body.classList.add('fade-in');
     };
   </script>
+  <style>
+	button{
+		justify-content: center;
+  align-items: center;
+	}
+  </style>
 <button onclick="play()">Emulate</button>
 </body>
 </fadable>
