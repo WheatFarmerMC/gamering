@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<fadable>
 <link href="games/Games.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/x-icon" href="/images/SimpleVHS.png">
 <body>
@@ -12,7 +12,7 @@
 </div>
 <script>
     function fadeOutAndRedirect(url) {
-      const body = document.querySelector('html');
+      const body = document.querySelector('fadable');
       body.classList.add('fade-out');
       
       setTimeout(() => {
@@ -27,4 +27,5 @@
   </script>
 <button onclick="play()">Emulate</button>
 </body>
+</fadable>
 </html>

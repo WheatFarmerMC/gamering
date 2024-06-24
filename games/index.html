@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<fadable>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,7 +72,7 @@ document.body.appendChild(columns);
 </script>
 <script>
     function fadeOutAndRedirect(url) {
-      const body = document.querySelector('html');
+      const body = document.querySelector('fadable');
       body.classList.add('fade-out');
       
       setTimeout(() => {
@@ -86,6 +87,7 @@ window.onload = () => {
   </script>
 <script src="list.js"></script>
 </body>
+</fadable>
 </html>
 
 

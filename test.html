@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<fadable>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,7 @@
   </div>
   <script>
     function fadeOutAndRedirect(url) {
-      const body = document.querySelector('html');
+      const body = document.querySelector('fadable');
       body.classList.add('fade-out');
       
       setTimeout(() => {
@@ -33,4 +34,5 @@
     };
   </script>
 </body>
+</fadable>
 </html>
