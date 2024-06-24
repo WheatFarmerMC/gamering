@@ -13,8 +13,8 @@
   body {
   font-size: 1.2rem;
   font-weight: 500;
-  background-color: #0B132B;
-  color: #5BC0BE;
+  background-color: #353535;
+  color: #fff;
   }
   body {
   display: flex;
@@ -42,8 +42,8 @@
   text-align: center;
   }
   .my-btn {
-  background-color: #3A506B;
-  color: #6FFFE9;
+  background-color: #8075FF;
+  color: #fff;
   border: none;
   border-radius: 20px;
   box-shadow: none;
@@ -89,5 +89,22 @@
   outline-style: solid;
   box-shadow: none;
   transition: 0.2s;
+  }
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.5s forwards;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s forwards;
   }
   

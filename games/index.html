@@ -69,6 +69,21 @@ columns.appendChild(gameContainer)
 document.body.appendChild(columns);
 });
 </script>
+<script>
+    function fadeOutAndRedirect(url) {
+      const body = document.querySelector('html');
+      body.classList.add('fade-out');
+      
+      setTimeout(() => {
+        window.location.href = url;
+      }, 500); // match this to your animation duration
+    }
+
+window.onload = () => {
+    const body = document.querySelector('body');
+    body.classList.add('fade-in');
+    };
+  </script>
 <script src="list.js"></script>
 </body>
 </html>

@@ -8,98 +8,131 @@ src: url(ADLaMDisplay-Regular.ttf);
   }
 * {
   font-family: Font;
+  background-color: #353535;
 }
 html,
+.montserrat-semibold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.big-text{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: bold;
+  font-size: 4rem;
+  text-align: center;
+}
+.button-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
   
-  font-size: 1.2rem;
-  font-weight: 500;
-  background-color: #BC00DD;
-  color: #FFB600;
-  background-image: url('/images/recgrid.png');
 }
-
-body {
-  font-family: 'Font', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
-  background-color: #BC00DD;
-  color: #FFB600;
-  background-image: url('/images/recgrid.png');
-  margin: 0;
-  padding: 0;
+.primary-button {
+  text-align: center;
+  border-width:0px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: bold;
+  font-size:1.9rem;
+  color: #FFFFFF;
+  background-color: #8075FF;
+  border-radius:5px;
+  padding: 10px 30px;
+  position:relative;
+  margin: 10px;
+  box-shadow: 0px 6px 10px #242424;
+  
 }
-
-.container {
-  position: absolute;
-  bottom: 67%;
-  left: 80%;
-  z-index: 2;
-}
-
-.discount {
-  position: absolute;
-  left: 100%;
-  width: 222px;
-  height: 127px;
-  rotate: 5deg;
-  transition: 0.3s ease;
-}
-.my-btn {
-  background-color: #F20089;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  box-shadow: none;
-  padding: 5px 15px;
-  min-height: 30px;
-  min-width: 120px;
-  border: none;
-  outline: none;
+.primary-button:hover {
+  animation: pulse 1s infinite;
   cursor: pointer;
-  position: absolute;
-  bottom: 260%; /* Adjust the distance from the bottom of the image */
-  left:130%;
-  overflow: hidden; /* Add overflow: hidden; to clip any content or backgrounds that exceed the button's boundaries */
-  transition: background-color 0.7s ease; /* Add background-color transition for the button */
-  rotate: 15deg;
-
-  /* Remove the underline from the link */
-  text-decoration: none;
 }
 
-.grid-lines {
-  position: absolute;
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.secondary-button{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: bold;
+  font-size: 1.9rem;
+  border: none;
+  border: 3px solid #EB9486;
+  outline:none;
+  background-color: transparent;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 8px 28px;
+  position: relative;
+  margin: 10px;
+  box-shadow: 0px 6px 10px #242424;
+  z-index: 1;
+}
+.secondary-button:hover{
+  color:#fff;
+  cursor: pointer;
+}
+.secondary-button:before{
+  transition: 0.5s all ease;
+  position:absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: repeating-linear-gradient(to right, transparent, transparent 9px, #F20089 9px, #F20089 10px),
-                    repeating-linear-gradient(to bottom, transparent, transparent 9px, #F20089 9px, #F20089 10px);
-  background-size: 10px 10px; /* Adjust the size of the grid cells */
-  background-clip: padding-box; /* Prevent background from extending outside the padding box */
-  background-position: -1px -1px; /* Offset background position to hide the top-left corner */
-  pointer-events: none; /* Disable pointer events for the grid, so it doesn't interfere with button hover */
-  opacity: 0; /* Hide the grid lines by default */
-  transition: opacity 0.3s ease; /* Add a smooth transition when the grid appears */
-  transform-origin: center; /* Set the rotation origin to the center of the element */
+  left:50%;
+  right:50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #EB9486;
 }
 
-.my-btn:hover .grid-lines {
-  opacity: 1; /* Show the grid lines when button is hovered */
-  transform: rotate(2deg); /* Apply a 2-degree clockwise rotation to the grid lines */
+.secondary-button:hover:before{
+  transition: 0.5s all ease;
+  left:0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
 
-.my-btn:hover {
-  background-color: transparent; /* Make the button's background transparent */
-  transform: rotate(2deg);
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-.my-btn:focus {
-  outline-color: transparent;
-  outline-style: solid;
-  box-shadow: none;
-  transition: 0.2s;
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s forwards;
 }
 
 

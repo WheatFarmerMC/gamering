@@ -11,14 +11,20 @@
 
 </div>
 <script>
-function play() {
-let text = document.getElementById("editable").textContent;
-document.getElementById("demo").innerHTML = text;  
-var myWindow = window.open("", "_blank");
-myWindow.document.write('<link href="games/Games.css" rel="stylesheet" type="text/css" /> <iframe width="100%" height="100%" src="'+ text + '" frameborder="0px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>');
-}
+    function fadeOutAndRedirect(url) {
+      const body = document.querySelector('html');
+      body.classList.add('fade-out');
+      
+      setTimeout(() => {
+        window.location.href = url;
+      }, 500); // match this to your animation duration
+    }
 
-</script>
+    window.onload = () => {
+      const body = document.querySelector('body');
+      body.classList.add('fade-in');
+    };
+  </script>
 <button onclick="play()">Emulate</button>
 </body>
 </html>

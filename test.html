@@ -1,162 +1,36 @@
 <!DOCTYPE html>
-
 <html>
-  
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" type="image/x-icon" href="/images/Untitled design.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="test.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <style>
-    
-    .box {
-      display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-img {
-  width: 512px;
-  transition: transform 0.3s ease;
-}
-
-      .image-wrapper {
-        position: fixed;
-        top: 50vh;
-        left: 50vw;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background-size: 5000px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        text-align: center;
-    }
-      .image-container {
-        position: relative;
-      }
-    .square {
-    width: 280px;  
-    height: 500px;
-    position: absolute;
-    bottom: 10%;
-    right:55%;
-    z-index: -1;
-    transition: transform 0.3s ease;
-    background-color: #190061; /* Set the color of the square */
-  }
-    .description {
-    width: 300px;
-      height: 300px;
-      position: absolute;
-      bottom: 18%;
-      right: 65%;
-      z-index:4
-      transition: transform 0.3s ease;
-      background-color: #3500D3;
-    }
-  .expand {
-      transform: scale(1.1); /* Scale the square to 120% of its original size */
-      transition: transform 0.3s ease;
-    }
-  h1{
-    z-index: 3;
-    transition: transform 0.3s ease;
-    height: 30%;
-  }
-  body{
-    background-image: url('/images/grid.png');
-  }
-    p{
-      z-index: 5;
-    }
-    </style>
-        <script>
-          function exit() {
-        var image = document.querySelector('.box img');
-        image.classList.add('animated', 'zoomOutDown');
-        image.addEventListener('animationend', function () {
-          image.style.display = 'none';
-          window.location.href = '/list';
-        })
-        };
-        function pulse(){
-            var square = document.querySelector('.square')
-            square.classList.add('animated', 'pulse');
-        square.addEventListener('animationend', function () {
-        })
-      };
-      function expandOnHover() {
-    var square = document.querySelector('.square');
-    square.addEventListener('mouseenter', function () {
-      square.classList.add('expand');
-    });
-
-    square.addEventListener('mouseleave', function () {
-      square.classList.remove('expand');
-    });
-  }
-  function imgexpand() {
-    var square = document.querySelector('.box img');
-    square.addEventListener('mouseenter', function () {
-      square.classList.add('expand');
-    });
-
-    square.addEventListener('mouseleave', function () {
-      square.classList.remove('expand');
-    });
-  }
-  function h1expand() {
-    var square = document.querySelector('h1');
-    square.addEventListener('mouseenter', function () {
-      square.classList.add('expand');
-    });
-
-    square.addEventListener('mouseleave', function () {
-      square.classList.remove('expand');
-    });
-  }
-  window.onload = function () {
-      /*pulse();*/
-      expandOnHover();
-      imgexpand();
-      h1expand();
-    };
-
-        </script>
-  </head>
-  <body>  
-    <div class = "image-wrapper">
-      <div class="box">  
-        <h1>Gamering</h1>
-        <img src="/images/90s-vhs-cassette-tape-free-vector.png" alt="Agogus" />
-        <p>Too cool for school B)</p>
-        <div class="container">
-          <a onclick="exit()" type="button" class="my-btn">
-          
-          ▶ Play
-          <div class="grid-lines"></div> <!-- Move the .grid-lines inside the .my-btn element -->
-          
-          </a>
-          <img src="/images/80off.png" class="discount" alt="Agogus" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/x-icon" href="/images/Untitled design.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">    
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body class="fade-in">
+  <p class="big-text">GAMERING</p>
+  <div class="button-container">
+    <button class="primary-button" onclick="fadeOutAndRedirect('/games/')">Play</button>
+    <button class="secondary-button" onclick="fadeOutAndRedirect('/emulation')">Emulate</button>
+  </div>
+  <script>
+    function fadeOutAndRedirect(url) {
+      const body = document.querySelector('html');
+      body.classList.add('fade-out');
       
-        </div>
-      </div>
+      setTimeout(() => {
+        window.location.href = url;
+      }, 500); // match this to your animation duration
+    }
 
-    <script src="index.js">
-      </script>
-      <script>
-    </script>
-    
-  </body>
+    window.onload = () => {
+      const body = document.querySelector('body');
+      body.classList.add('fade-in');
+    };
+  </script>
+</body>
 </html>
