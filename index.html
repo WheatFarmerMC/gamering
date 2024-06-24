@@ -26,9 +26,13 @@
       const body = document.querySelector('fadable');
       body.classList.add('fade-out');
       
+      
       setTimeout(() => {
         window.location.href = url;
       }, 500); // match this to your animation duration
+      setTimeout(() => {
+        body.classList.remove('fade-out');
+      }, 1000); // match this to your animation duration
     }
 
     window.onload = () => {
