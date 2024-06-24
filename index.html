@@ -12,13 +12,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
   <link rel="icon" type="image/x-icon" href="simpleIcon.png">
-  <meta charset='utf8'>
 </head>
 <body class="fade-in">
-  <p class="big-text">Gamering</p>
-  <div class="button-container">
-    <button class="primary-button" onclick="fadeOutAndRedirect('/games/')">Play</button>
-    <button class="secondary-button" onclick="fadeOutAndRedirect('/emulation')">Emulate</button>
+  <div class="content-container">
+    <p class="big-text">Gamering</p>
+    <div class="button-container">
+      <button class="primary-button" onclick="fadeOutAndRedirect('/games/')">Play</button>
+      <button class="secondary-button" onclick="fadeOutAndRedirect('/emulation')">Emulate</button>
+    </div>
   </div>
   <script>
     function fadeOutAndRedirect(url) {

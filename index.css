@@ -2,10 +2,10 @@
   box-sizing: border-box;
 }
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
-  @font-face {
-font-family: Font;
-src: url(ADLaMDisplay-Regular.ttf);
-  }
+@font-face {
+  font-family: Font;
+  src: url(ADLaMDisplay-Regular.ttf);
+}
 * {
   font-family: Font;
   background-color: #171717;
@@ -25,41 +25,53 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-.big-text{
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-text {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: bold;
   font-size: 4rem;
   text-align: center;
+  margin-bottom:  15%; /* Adjust this value to change the spacing between the text and buttons */
 }
-.button-container{
+
+.button-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align:center;
-  
 }
+
 .primary-button {
   text-align: center;
-  border-width:0px;
+  border-width: 0px;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: bold;
-  font-size:1.9rem;
+  font-size: 1.9rem;
   color: #FFFFFF;
   background-color: #8075FF;
-  border-radius:5px;
+  border-radius: 5px;
   padding: 10px 30px;
-  position:relative;
+  position: relative;
   margin: 10px;
   box-shadow: 0px 6px 10px #242424;
-  
 }
+
 .primary-button:hover {
   animation: pulse 1s infinite;
   cursor: pointer;
@@ -76,7 +88,8 @@ body {
     transform: scale(1);
   }
 }
-.secondary-button{
+
+.secondary-button {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
@@ -84,7 +97,7 @@ body {
   font-size: 1.9rem;
   border: none;
   border: 3px solid #EB9486;
-  outline:none;
+  outline: none;
   background-color: transparent;
   color: #FFFFFF;
   border-radius: 5px;
@@ -94,37 +107,47 @@ body {
   box-shadow: 0px 6px 10px #242424;
   z-index: 1;
 }
-.secondary-button:hover{
-  color:#fff;
+
+.secondary-button:hover {
+  color: #fff;
   cursor: pointer;
 }
-.secondary-button:before{
+
+.secondary-button:before {
   transition: 0.5s all ease;
-  position:absolute;
+  position: absolute;
   top: 0;
-  left:50%;
-  right:50%;
+  left: 50%;
+  right: 50%;
   bottom: 0;
   opacity: 0;
   content: "";
   background-color: #EB9486;
 }
 
-.secondary-button:hover:before{
-  transition: 0.5s all ease;
-  left:0;
+.secondary-button:hover:before {
+  left: 0;
   right: 0;
   opacity: 1;
   z-index: -1;
 }
+
 @keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .fade-out {
@@ -133,6 +156,4 @@ body {
 
 .fade-in {
   animation: fadeIn 0.5s forwards;
-} 
-
-
+}
