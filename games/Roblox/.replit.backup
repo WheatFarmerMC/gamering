@@ -1,0 +1,5 @@
+language="python"
+# .replit
+audio = true
+run = "sh bash.sh"
+run="python main.py"

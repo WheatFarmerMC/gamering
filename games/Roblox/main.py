@@ -1,13 +1,8 @@
-import selenium
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-from encryption import text
+import os
 
-chrome_options = Options()
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--disable-dev-shm-usage')
-driver = webdriver.Chrome(options = chrome_options)
+os.system("pip install selenium==3.141.0")
+from webbot import Browser
 
-driver.get('https://roblox.com/login')
+web = Browser()
+web.go_to('https://github.com/SeleniumHQ/selenium ')
+website = input('Service has audio')
