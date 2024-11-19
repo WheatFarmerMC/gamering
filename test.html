@@ -1,39 +1,14 @@
 <!DOCTYPE html>
+<script type="text/javascript" src="test.json"></script>
 <html>
-<fadable>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">    
-  <link rel="stylesheet" href="test.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <link rel="icon" type="image/x-icon" href="/images/SimpleVHS.png">
-  <title>Gamering</title>
-</head>
-<body class="fade-in">
-  <p class="big-text">GAMERING</p>
-  <div class="button-container">
-    <button class="primary-button" onclick="fadeOutAndRedirect('/games/')">Play</button>
-    <button class="secondary-button" onclick="fadeOutAndRedirect('/emulation')">Emulate</button>
-  </div>
-  <script>
-    function fadeOutAndRedirect(url) {
-      const body = document.querySelector('fadeable');
-      body.classList.add('fade-out');
-      
-      setTimeout(() => {
-        window.location.href = url;
-      }, 500); // match this to your animation duration
-    }
+<script>
+  async function test(){
+    var mydata = JSON.parse(data);
+    const body = document.querySelector("body");
+    body.textContent = mydata;
+  }
+</script>
+<body>
 
-    window.onload = () => {
-      const body = document.querySelector('body');
-      body.classList.add('fade-in');
-    };
-  </script>
 </body>
-</fadable>
 </html>
