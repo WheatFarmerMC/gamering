@@ -1,5 +1,11 @@
-{
-    "tester":[
-        {"firstname":"John", "lastname":"Doe"}
-    ]
-}
+[
+    {
+      "ye":"yes"
+    },
+    {
+      "text":"argh"
+    },
+    {
+      "text":"porky"
+    }
+  ]

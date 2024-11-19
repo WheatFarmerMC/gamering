@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<script type="text/javascript" src="test.json"></script>
-<html>
-<script>
-  async function test(){
-    var mydata = JSON.parse(data);
-    const body = document.querySelector("body");
-    body.textContent = mydata;
-  }
-</script>
-<body>
 
+<html>
+  <script type="text/javascript" src="test.json"></script>
+<body>
+<p id="demo"></p>
+<script>
+  fetch('test.json')
+  .then(response => response.json())
+  .then(data => {const date=data})
+  .catch(error => console.error('Error fetching JSON:', error));
+  document.getElementById("demo").innerHTML = date;
+</script>
 </body>
 </html>
