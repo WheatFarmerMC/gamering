@@ -14,8 +14,8 @@
 	function play() {
 		let text = document.getElementById("editable").textContent; 
 		var myWindow = window.open("", "_blank");
-		//myWindow.document.write('<link href="games/Games.css" rel="stylesheet" type="text/css" /> <iframe width="100%" height="100%" src="'+ text + '" frameborder="0px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>');
-    myWindow.document.write('<script src="https://unpkg.com/@ungap/custom-elements-builtin"></script><script type="module" src="https://unpkg.com/x-frame-bypass"></script><iframe is="x-frame-bypass" src="' + text + '" width="100%" height="100%" frameborder="0px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>');
+		myWindow.document.write('<link href="games/Games.css" rel="stylesheet" type="text/css" /> <iframe width="100%" height="100%" src="'+ text + '" frameborder="0px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>');
+    //myWindow.document.write('<script src="https://unpkg.com/@ungap/custom-elements-builtin"></script><script type="module" src="https://unpkg.com/x-frame-bypass"></script><iframe is="x-frame-bypass" src="'+ text + '" width="100%" height="100%" frameborder="0px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>');
   }
     function fadeOutAndRedirect(url) {
       const body = document.querySelector('fadable');
