@@ -31,17 +31,18 @@
   </div>
   <div id="demo"></div>
 
-  <button onclick="play()">Emulate</button>
+  <button onclick="play()" id="porky">Emulate</button>
 
   <script>
     function play() {
       let text = document.getElementById("editable").textContent.trim();
-      var myWindow = window.open("", "_blank");
+      let textobject = document.getElementById("editable");
+      let porky = document.getElementById("porky");
+      porky.style.display = "none";
+      textobject.style.display = "none";
 
       var iframeContent = '<head><script src="https://unpkg.com/@ungap/custom-elements-builtin"> <\/script><script src="x-frame-bypass.js" type="module"><\/script></head><body><iframe is="x-frame-bypass" src="' + text + '"></iframe></body>';
-
-      myWindow.document.write(iframeContent);
-      myWindow.document.close();
+      document.getElementById("parentID").innerHTML+= iframeContent;
     }
 
     function fadeOutAndRedirect(url) {
