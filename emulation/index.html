@@ -38,14 +38,10 @@
       let text = document.getElementById("editable").textContent.trim();
       var myWindow = window.open("", "_blank");
 
-      // Make sure to wrap the scripts and iframe properly using backticks
-      var iframeContent = '<head><script src="https://unpkg.com/@ungap/custom-elements-builtin"></script><script src="x-frame-bypass.js" type="module"></script></head><body><iframe is="x-frame-bypass" src="' + url + '"></iframe></body>'
+      var iframeContent = '<head><script src="https://unpkg.com/@ungap/custom-elements-builtin"></script><script src="x-frame-bypass.js" type="module"></script></head><body><iframe is="x-frame-bypass" src="' + url + '"></iframe></body>';
 
-      // Write the content to the new window
       myWindow.document.write(iframeContent);
-
-      // Make sure the script tag gets executed in the new window.
-      myWindow.document.close(); // Make sure the document is closed so scripts are executed
+      myWindow.document.close();
     }
 
     function fadeOutAndRedirect(url) {
@@ -54,7 +50,7 @@
         
       setTimeout(() => {
         window.location.href = url;
-      }, 500); // match this to your animation duration
+      }, 500);
     }
 
     window.onload = () => {
