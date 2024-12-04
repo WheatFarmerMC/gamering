@@ -38,7 +38,7 @@
       let text = document.getElementById("editable").textContent.trim();
       var myWindow = window.open("", "_blank");
 
-      var iframeContent = '<head><script src="https://unpkg.com/@ungap/custom-elements-builtin"></script><script src="x-frame-bypass.js" type="module"></script></head><body><iframe is="x-frame-bypass" src="' + url + '"></iframe></body>';
+      var iframeContent = '<head><script src="https://unpkg.com/@ungap/custom-elements-builtin"></script><script src="x-frame-bypass.js" type="module"></script></head><body><iframe is="x-frame-bypass" src="' + text + '"></iframe></body>';
 
       myWindow.document.write(iframeContent);
       myWindow.document.close();
