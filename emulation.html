@@ -1,60 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link href="games/Games.css" rel="stylesheet" type="text/css"/>
-  <link rel="icon" type="image/x-icon" href="/images/SimpleVHS.png">
-  <style>
-    button {
-      justify-content: center;
-      align-items: center;
-    }
-    body {
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .fade-in {
-      opacity: 1;
-      transition: opacity 1s ease-in;
-    }
-    .fade-out {
-      opacity: 0;
-      transition: opacity 1s ease-out;
-    }
-  </style>
-</head>
+<fadable>
+<link href="games/Games.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/x-icon" href="/images/SimpleVHS.png">
 <body>
 
-  <div contenteditable="true" id="editable">
-    type link here
-  </div>
-  <div id="demo"></div>
+<div contenteditable="true" id="editable">
+	type link here
+</div>
+<div id='demo'>
 
-  <button onclick="play()">Emulate</button>
-
-  <script>
-    function play() {
-      let text = document.getElementById("editable").textContent.trim();
-      var myWindow = window.open("", "_blank");
-
-      // Make sure to wrap the scripts and iframe properly using backticks
-      var iframeContent = `
-        <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
-        <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
-        <iframe is="x-frame-bypass" src="${text}" width="100%" height="100%" frameborder="0px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>
-      `;
-
-      // Write the content to the new window
-      myWindow.document.write(iframeContent);
-
-      // Make sure the script tag gets executed in the new window.
-      myWindow.document.close(); // Make sure the document is closed so scripts are executed
-    }
-
+</div>
+<script>
+	function play() {
+		let text = document.getElementById("editable").textContent; 
+		var myWindow = window.open("", "_blank");
+		myWindow.document.write('<link href="games/Games.css" rel="stylesheet" type="text/css" /> <iframe width="100%" height="100%" src="'+ text + '" frameborder="0px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>');
+	}
     function fadeOutAndRedirect(url) {
-      const body = document.querySelector('.fadable');
+      const body = document.querySelector('fadable');
       body.classList.add('fade-out');
-        
+      
       setTimeout(() => {
         window.location.href = url;
       }, 500); // match this to your animation duration
@@ -63,8 +28,21 @@
     window.onload = () => {
       const body = document.querySelector('body');
       body.classList.add('fade-in');
-    }
+    };
   </script>
-
+  <style>
+	button{
+		justify-content: center;
+  align-items: center;
+	}
+	body
+	{
+		justify-content: center;
+  		align-items: center;
+		text-align: center;
+	}
+  </style>
+<button onclick="play()">Emulate</button>
 </body>
+</fadable>
 </html>
