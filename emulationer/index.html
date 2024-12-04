@@ -38,11 +38,13 @@
       let text = document.getElementById("editable").textContent.trim();
       let textobject = document.getElementById("editable");
       let porky = document.getElementById("porky");
-      porky.style.display = "none";
-      textobject.style.display = "none";
+
 
       var iframeContent = '<head><script src="https://unpkg.com/@ungap/custom-elements-builtin"> <\/script><script src="x-frame-bypass.js" type="module"><\/script></head><body><iframe is="x-frame-bypass" src="' + text + '"></iframe></body>';
+      porky.style.display = "none";
+      textobject.style.display = "none";
       document.getElementById("parentID").innerHTML+= iframeContent;
+
     }
 
     function fadeOutAndRedirect(url) {
