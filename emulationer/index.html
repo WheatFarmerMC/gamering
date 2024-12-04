@@ -24,7 +24,7 @@
     }
   </style>
 </head>
-<body>
+<body id="parentID">
 
   <div contenteditable="true" id="editable">
     type link here
@@ -43,7 +43,7 @@
       var iframeContent = '<head><script src="https://unpkg.com/@ungap/custom-elements-builtin"> <\/script><script src="x-frame-bypass.js" type="module"><\/script></head><body><iframe is="x-frame-bypass" src="' + text + ' width="100%" height="100%" frameborder="0px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes""></iframe></body>';
       porky.style.display = "none";
       textobject.style.display = "none";
-      document.getElementById("parentID").innerHTML+= iframeContent;
+      document.getElementById("parentID").innerHTML += iframeContent;
 
     }
 
