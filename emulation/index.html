@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="games/Games.css" rel="stylesheet" type="text/css"/>
+  <link rel="icon" type="image/x-icon" href="/images/SimpleVHS.png">
+  <style>
+    button {
+      justify-content: center;
+      align-items: center;
+    }
+    body {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .fade-in {
+      opacity: 1;
+      transition: opacity 1s ease-in;
+    }
+    .fade-out {
+      opacity: 0;
+      transition: opacity 1s ease-out;
+    }
+  </style>
+</head>
+<body>
+
+  <div contenteditable="true" id="editable">
+    type link here
+  </div>
+  <div id="demo"></div>
+
+  <button onclick="play()">Emulate</button>
+
+  <script>
+    function play() {
+      let text = document.getElementById("editable").textContent.trim();
+      var myWindow = window.open("", "_blank");
+
+      // Make sure to wrap the scripts and iframe properly using backticks
+      var iframeContent = '<head><script src="https://unpkg.com/@ungap/custom-elements-builtin"></script><script src="x-frame-bypass.js" type="module"></script></head><body><iframe is="x-frame-bypass" src="' + url + '"></iframe></body>'
+
+      // Write the content to the new window
+      myWindow.document.write(iframeContent);
+
+      // Make sure the script tag gets executed in the new window.
+      myWindow.document.close(); // Make sure the document is closed so scripts are executed
+    }
+
+    function fadeOutAndRedirect(url) {
+      const body = document.querySelector('.fadable');
+      body.classList.add('fade-out');
+        
+      setTimeout(() => {
+        window.location.href = url;
+      }, 500); // match this to your animation duration
+    }
+
+    window.onload = () => {
+      const body = document.querySelector('body');
+      body.classList.add('fade-in');
+    }
+  </script>
+
+</body>
+</html>
