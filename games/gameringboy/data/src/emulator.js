@@ -5329,7 +5329,7 @@ class EmulatorJS {
         this.gameManager.toggleShader(1);
     }
 
-     collectScreenRecordingMediaTracks(canvasEl, fps) {
+     /* collectScreenRecordingMediaTracks(canvasEl, fps) {
         let videoTrack = null;
         const videoTracks = canvasEl.captureStream(fps).getVideoTracks();
         if (videoTracks.length !== 0) {
@@ -5369,7 +5369,7 @@ class EmulatorJS {
             stream.addTrack(audioTrack);
         }
         return stream;
-    }
+    } */
 /*
     screenRecord() {
         const captureScreenWidth= (this.config.screenRecording && (typeof this.config.screenRecording.width == "number")) ? this.config.screenRecording.width : 800;
