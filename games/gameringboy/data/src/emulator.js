@@ -5329,7 +5329,7 @@ class EmulatorJS {
         this.gameManager.toggleShader(1);
     }
 
-    collectScreenRecordingMediaTracks(canvasEl, fps) {
+     collectScreenRecordingMediaTracks(canvasEl, fps) {
         let videoTrack = null;
         const videoTracks = canvasEl.captureStream(fps).getVideoTracks();
         if (videoTracks.length !== 0) {
@@ -5337,7 +5337,7 @@ class EmulatorJS {
         } else {
             console.error('Unable to capture video stream');
             return null;
-        }
+        } 
 
         let audioTrack = null;
         if (this.Module.AL && this.Module.AL.currentCtx && this.Module.AL.currentCtx.audioCtx) {
@@ -5370,7 +5370,7 @@ class EmulatorJS {
         }
         return stream;
     }
-
+/*
     screenRecord() {
         const captureScreenWidth= (this.config.screenRecording && (typeof this.config.screenRecording.width == "number")) ? this.config.screenRecording.width : 800;
         const captureScreenHeight = (this.config.screenRecording && (typeof this.config.screenRecording.height == "number")) ? this.config.screenRecording.height : 600;
@@ -5430,7 +5430,7 @@ class EmulatorJS {
         recorder.start();
 
         return recorder;
-    }
+    }*/
 
 }
 window.EmulatorJS = EmulatorJS;
