@@ -16,15 +16,10 @@
 <body>
   <div class="content-container">
     <div class="button-container">
-      <button class="secondary-button" onclick="fadeOutAndRedirect('/celeste')">Celeste</button>
-      <button class="secondary-button" onclick="fadeOutAndRedirect('/celeste_practice_mod')">Celeste Practice Mod</button>
+      <button class="secondary-button" onclick="window.location.href='/games/celeste/celeste'">Celeste</button>
+      <button class="secondary-button" onclick="window.location.href='/games/celeste/celeste_practice_mod'">Celeste Practice Mod</button>
     </div>
   </div>
-  <script>
-    function fadeOutAndRedirect(url) {
-        window.location.href = url;
-    };
-  </script>
 </body>
 
 </html>
