@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<fadable>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,10 +17,14 @@
   <div class="content-container">
     <div class="button-container">
       <button class="primary-button" onclick="fadeOutAndRedirect('celeste')">Celeste</button>
-      <button class="primary-button" onclick="fadeOutAndRedirect('celeste_practice_mod')">Celeste Practice Mod</button>
+      <button class="secondary-button" onclick="fadeOutAndRedirect('celeste_practice_mod')">Celeste Practice Mod</button>
     </div>
   </div>
   <script>
+    function fadeOutAndRedirect(url) {
+        window.location.href = url;
+    };
   </script>
 </body>
+</fadable>
 </html>
