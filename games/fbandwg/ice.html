@@ -1,0 +1,61 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>FireBoy and WaterGirl</title>
+      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Games.css">
+        <link rel="icon" type="image/x-icon" href="/images/SimpleVHS.png">
+        <meta charset='utf8'>
+        <style>
+            .box {
+              width: 100vw;
+              height: 100vh;
+              border: 0px solid #3500D3;
+              padding-bottom: 0px;
+              left:50vw;
+              top:50vh;
+            }
+            img {
+              width: 100vw;
+              height: 100vh;
+            }
+          body {
+  overflow: hidden; /* Hide scrollbars */
+            margin:0px;
+            border: 0px;
+}
+        </style>
+    </head>
+    <body>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <div id='ruffle'></div>
+            <script src='https://gameringer.vercel.app/ruffle/ruffle.js'></script>
+            <script>
+            var swfobject = {};
+
+            swfobject.embedSWF = function(url, cont, width, height){
+            var ruffle = window.RufflePlayer.newest(),
+            player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+            style: 'width: 100vw; height: 100vh',
+        });
+    
+    player.load({ url: url });
+}
+
+swfobject.embedSWF('https://raw.githubusercontent.com/WheatFarmerMC/Flashers/main/FireboyWatergirl-IceTemple.swf', 'ruffle', 100, 100);
+        </script>
+        </div>
+    </body>
+<script>
+function openWindow() {
+	window.open('ducklife4.html', '_parent');
+}
+</script>
+</html>
