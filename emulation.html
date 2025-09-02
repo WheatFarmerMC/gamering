@@ -16,6 +16,12 @@
 		var myWindow = window.open("", "_blank");
 		myWindow.document.write('<link href="games/Games.css" rel="stylesheet" type="text/css" /> <iframe width="100%" height="100%" src="'+ text + '" frameborder="0px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>');
 	}
+  	function playwindow() {
+		let text = document.getElementById("editable").textContent; 
+		var myWindow = window.open("", "_blank", "width=400,height=300");
+		myWindow.document.write('<link href="games/Games.css" rel="stylesheet" type="text/css" /> <iframe width="100%" height="100%" src="'+ text + '" frameborder="0px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>');
+	}
+  
     function fadeOutAndRedirect(url) {
       const body = document.querySelector('fadable');
       body.classList.add('fade-out');
@@ -43,6 +49,7 @@
 	}
   </style>
 <button onclick="play()">Emulate</button>
+<button onclick="playwindow()">Emulate in new Window</button>
 </body>
 </fadable>
 </html>
