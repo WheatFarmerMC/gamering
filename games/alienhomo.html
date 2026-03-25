@@ -13,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Games.css">
         <link rel="icon" type="image/x-icon" href="/images/SimpleVHS.png">
+        <script src='https://gameringer.vercel.app/ruffle/ruffle.js'></script>
         <meta charset='utf8'>
         <style>
             .box {
@@ -42,9 +43,10 @@
             var swfobject = {};
 
             swfobject.embedSWF = function(url, cont, width, height){
-            var ruffle = window.RufflePlayer.newest(),
+            var ruffle = window.RufflePlayer.newest();
             player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
             style: 'width: 100vw; height: 100vh',
+            
         });
     
     player.load({ url: url });
